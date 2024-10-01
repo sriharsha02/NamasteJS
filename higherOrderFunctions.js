@@ -7,7 +7,7 @@ const calculateArea = function (radius) {
   }
   return output;
 };
-console.log(calculateArea(radius));
+// console.log(calculateArea(radius));
 
 const calculateCircumference = function (radius) {
   let output = [];
@@ -16,7 +16,7 @@ const calculateCircumference = function (radius) {
   }
   return output;
 };
-console.log(calculateCircumference(radius));
+// console.log(calculateCircumference(radius));
 
 const calculateDiameter = function (radius) {
   let output = [];
@@ -25,7 +25,7 @@ const calculateDiameter = function (radius) {
   }
   return output;
 };
-console.log(calculateDiameter(radius));
+// console.log(calculateDiameter(radius));
 
 //Optimizing above code : Functional Programming
 
@@ -40,4 +40,16 @@ const area = function (radius) {
   return Math.PI * radius * radius;
 };
 
+const circumference = function (radius) {
+  return 2 * Math.PI * radius;
+};
+const diameter = function (radius) {
+  return 2 * radius;
+};
 console.log(calculate(radius, area));
+console.log(calculate(radius, circumference));
+console.log(calculate(radius, diameter));
+
+//using map
+
+console.log(radius.map(area));
