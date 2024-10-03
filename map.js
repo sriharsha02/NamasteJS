@@ -24,3 +24,19 @@ function binary(x) {
 }
 const toBinary = arr.map(binary);
 console.log(toBinary);
+
+//example
+
+const users = [
+  { firstName: "akshay", lastName: "Saini", age: 26 },
+  { firstName: "donald", lastName: "Trump", age: 70 },
+  { firstName: "Elon", lastName: "Musk", age: 50 },
+  { firstName: "Sri Harsha", lastName: "Akshintala", age: 28 },
+];
+
+//list of full names
+
+const fullNames = users.map(function (users) {
+  return users.firstName + users.lastName;
+});
+console.log(fullNames);
